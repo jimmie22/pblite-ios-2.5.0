@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B277B0891A5E52B3006FCDD5 /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B0641A5E52B3006FCDD5 /* extension_set.cc */; };
+		B277B08A1A5E52B3006FCDD5 /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B0661A5E52B3006FCDD5 /* generated_message_util.cc */; };
+		B277B08B1A5E52B3006FCDD5 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B0691A5E52B3006FCDD5 /* coded_stream.cc */; };
+		B277B08C1A5E52B3006FCDD5 /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B06C1A5E52B3006FCDD5 /* zero_copy_stream.cc */; };
+		B277B08D1A5E52B3006FCDD5 /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B06E1A5E52B3006FCDD5 /* zero_copy_stream_impl_lite.cc */; };
+		B277B08E1A5E52B3006FCDD5 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B0701A5E52B3006FCDD5 /* message_lite.cc */; };
+		B277B08F1A5E52B3006FCDD5 /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B0721A5E52B3006FCDD5 /* repeated_field.cc */; };
+		B277B0901A5E52B3006FCDD5 /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B07B1A5E52B3006FCDD5 /* common.cc */; };
+		B277B0911A5E52B3006FCDD5 /* once.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B0801A5E52B3006FCDD5 /* once.cc */; };
+		B277B0921A5E52B3006FCDD5 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = B277B0861A5E52B3006FCDD5 /* wire_format_lite.cc */; };
+		B2F90D511A65020600D4837F /* config.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0931A5E539C006FCDD5 /* config.h */; };
+		B2F90D521A65020600D4837F /* extension_set.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0651A5E52B3006FCDD5 /* extension_set.h */; };
+		B2F90D531A65020600D4837F /* generated_message_util.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0671A5E52B3006FCDD5 /* generated_message_util.h */; };
+		B2F90D541A65020600D4837F /* coded_stream.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B06A1A5E52B3006FCDD5 /* coded_stream.h */; };
+		B2F90D551A65020600D4837F /* coded_stream_inl.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B06B1A5E52B3006FCDD5 /* coded_stream_inl.h */; };
+		B2F90D561A65020600D4837F /* zero_copy_stream.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B06D1A5E52B3006FCDD5 /* zero_copy_stream.h */; };
+		B2F90D571A65020600D4837F /* zero_copy_stream_impl_lite.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B06F1A5E52B3006FCDD5 /* zero_copy_stream_impl_lite.h */; };
+		B2F90D581A65020600D4837F /* message_lite.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0711A5E52B3006FCDD5 /* message_lite.h */; };
+		B2F90D591A65020600D4837F /* repeated_field.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0731A5E52B3006FCDD5 /* repeated_field.h */; };
+		B2F90D5A1A65020600D4837F /* atomicops.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0751A5E52B3006FCDD5 /* atomicops.h */; };
+		B2F90D5B1A65020600D4837F /* atomicops_internals_atomicword_compat.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0771A5E52B3006FCDD5 /* atomicops_internals_atomicword_compat.h */; };
+		B2F90D5C1A65020600D4837F /* atomicops_internals_macosx.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0781A5E52B3006FCDD5 /* atomicops_internals_macosx.h */; };
+		B2F90D5D1A65020600D4837F /* common.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B07C1A5E52B3006FCDD5 /* common.h */; };
+		B2F90D5E1A65020600D4837F /* hash.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B07D1A5E52B3006FCDD5 /* hash.h */; };
+		B2F90D5F1A65020600D4837F /* map-util.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B07E1A5E52B3006FCDD5 /* map-util.h */; };
+		B2F90D601A65020600D4837F /* once.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0811A5E52B3006FCDD5 /* once.h */; };
+		B2F90D611A65020600D4837F /* platform_macros.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0821A5E52B3006FCDD5 /* platform_macros.h */; };
+		B2F90D621A65020600D4837F /* stl_util.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0831A5E52B3006FCDD5 /* stl_util.h */; };
+		B2F90D631A65020600D4837F /* template_util.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0841A5E52B3006FCDD5 /* template_util.h */; };
+		B2F90D641A65020600D4837F /* type_traits.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0851A5E52B3006FCDD5 /* type_traits.h */; };
+		B2F90D651A65020600D4837F /* wire_format_lite.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0871A5E52B3006FCDD5 /* wire_format_lite.h */; };
+		B2F90D661A65020600D4837F /* wire_format_lite_inl.h in Sources */ = {isa = PBXBuildFile; fileRef = B277B0881A5E52B3006FCDD5 /* wire_format_lite_inl.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B24258E61A5BE9C600581E0F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B24258E81A5BE9C600581E0F /* libprotobuf-lite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libprotobuf-lite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B277B0641A5E52B3006FCDD5 /* extension_set.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extension_set.cc; sourceTree = "<group>"; };
+		B277B0651A5E52B3006FCDD5 /* extension_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extension_set.h; sourceTree = "<group>"; };
+		B277B0661A5E52B3006FCDD5 /* generated_message_util.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generated_message_util.cc; sourceTree = "<group>"; };
+		B277B0671A5E52B3006FCDD5 /* generated_message_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generated_message_util.h; sourceTree = "<group>"; };
+		B277B0691A5E52B3006FCDD5 /* coded_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coded_stream.cc; sourceTree = "<group>"; };
+		B277B06A1A5E52B3006FCDD5 /* coded_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coded_stream.h; sourceTree = "<group>"; };
+		B277B06B1A5E52B3006FCDD5 /* coded_stream_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coded_stream_inl.h; sourceTree = "<group>"; };
+		B277B06C1A5E52B3006FCDD5 /* zero_copy_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream.cc; sourceTree = "<group>"; };
+		B277B06D1A5E52B3006FCDD5 /* zero_copy_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream.h; sourceTree = "<group>"; };
+		B277B06E1A5E52B3006FCDD5 /* zero_copy_stream_impl_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream_impl_lite.cc; sourceTree = "<group>"; };
+		B277B06F1A5E52B3006FCDD5 /* zero_copy_stream_impl_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream_impl_lite.h; sourceTree = "<group>"; };
+		B277B0701A5E52B3006FCDD5 /* message_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message_lite.cc; sourceTree = "<group>"; };
+		B277B0711A5E52B3006FCDD5 /* message_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_lite.h; sourceTree = "<group>"; };
+		B277B0721A5E52B3006FCDD5 /* repeated_field.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = repeated_field.cc; sourceTree = "<group>"; };
+		B277B0731A5E52B3006FCDD5 /* repeated_field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = repeated_field.h; sourceTree = "<group>"; };
+		B277B0751A5E52B3006FCDD5 /* atomicops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomicops.h; sourceTree = "<group>"; };
+		B277B0771A5E52B3006FCDD5 /* atomicops_internals_atomicword_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomicops_internals_atomicword_compat.h; sourceTree = "<group>"; };
+		B277B0781A5E52B3006FCDD5 /* atomicops_internals_macosx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomicops_internals_macosx.h; sourceTree = "<group>"; };
+		B277B07B1A5E52B3006FCDD5 /* common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cc; sourceTree = "<group>"; };
+		B277B07C1A5E52B3006FCDD5 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		B277B07D1A5E52B3006FCDD5 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		B277B07E1A5E52B3006FCDD5 /* map-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "map-util.h"; sourceTree = "<group>"; };
+		B277B0801A5E52B3006FCDD5 /* once.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = once.cc; sourceTree = "<group>"; };
+		B277B0811A5E52B3006FCDD5 /* once.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = once.h; sourceTree = "<group>"; };
+		B277B0821A5E52B3006FCDD5 /* platform_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_macros.h; sourceTree = "<group>"; };
+		B277B0831A5E52B3006FCDD5 /* stl_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stl_util.h; sourceTree = "<group>"; };
+		B277B0841A5E52B3006FCDD5 /* template_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = template_util.h; sourceTree = "<group>"; };
+		B277B0851A5E52B3006FCDD5 /* type_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
+		B277B0861A5E52B3006FCDD5 /* wire_format_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wire_format_lite.cc; sourceTree = "<group>"; };
+		B277B0871A5E52B3006FCDD5 /* wire_format_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite.h; sourceTree = "<group>"; };
+		B277B0881A5E52B3006FCDD5 /* wire_format_lite_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite_inl.h; sourceTree = "<group>"; };
+		B277B0931A5E539C006FCDD5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "protobuf-lite/config.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B24258E51A5BE9C600581E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B24258DF1A5BE9C600581E0F = {
+			isa = PBXGroup;
+			children = (
+				B24258EA1A5BE9C600581E0F /* protobuf-lite */,
+				B24258E91A5BE9C600581E0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B24258E91A5BE9C600581E0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B24258E81A5BE9C600581E0F /* libprotobuf-lite.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B24258EA1A5BE9C600581E0F /* protobuf-lite */ = {
+			isa = PBXGroup;
+			children = (
+				B277B0931A5E539C006FCDD5 /* config.h */,
+				B277B0621A5E52B3006FCDD5 /* google */,
+			);
+			name = "protobuf-lite";
+			path = "protobug-lite";
+			sourceTree = "<group>";
+		};
+		B277B0621A5E52B3006FCDD5 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				B277B0631A5E52B3006FCDD5 /* protobuf */,
+			);
+			name = google;
+			path = "protobuf-lite/google";
+			sourceTree = SOURCE_ROOT;
+		};
+		B277B0631A5E52B3006FCDD5 /* protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				B277B0641A5E52B3006FCDD5 /* extension_set.cc */,
+				B277B0651A5E52B3006FCDD5 /* extension_set.h */,
+				B277B0661A5E52B3006FCDD5 /* generated_message_util.cc */,
+				B277B0671A5E52B3006FCDD5 /* generated_message_util.h */,
+				B277B0681A5E52B3006FCDD5 /* io */,
+				B277B0701A5E52B3006FCDD5 /* message_lite.cc */,
+				B277B0711A5E52B3006FCDD5 /* message_lite.h */,
+				B277B0721A5E52B3006FCDD5 /* repeated_field.cc */,
+				B277B0731A5E52B3006FCDD5 /* repeated_field.h */,
+				B277B0741A5E52B3006FCDD5 /* stubs */,
+				B277B0861A5E52B3006FCDD5 /* wire_format_lite.cc */,
+				B277B0871A5E52B3006FCDD5 /* wire_format_lite.h */,
+				B277B0881A5E52B3006FCDD5 /* wire_format_lite_inl.h */,
+			);
+			path = protobuf;
+			sourceTree = "<group>";
+		};
+		B277B0681A5E52B3006FCDD5 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				B277B0691A5E52B3006FCDD5 /* coded_stream.cc */,
+				B277B06A1A5E52B3006FCDD5 /* coded_stream.h */,
+				B277B06B1A5E52B3006FCDD5 /* coded_stream_inl.h */,
+				B277B06C1A5E52B3006FCDD5 /* zero_copy_stream.cc */,
+				B277B06D1A5E52B3006FCDD5 /* zero_copy_stream.h */,
+				B277B06E1A5E52B3006FCDD5 /* zero_copy_stream_impl_lite.cc */,
+				B277B06F1A5E52B3006FCDD5 /* zero_copy_stream_impl_lite.h */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		B277B0741A5E52B3006FCDD5 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				B277B0751A5E52B3006FCDD5 /* atomicops.h */,
+				B277B0771A5E52B3006FCDD5 /* atomicops_internals_atomicword_compat.h */,
+				B277B0781A5E52B3006FCDD5 /* atomicops_internals_macosx.h */,
+				B277B07B1A5E52B3006FCDD5 /* common.cc */,
+				B277B07C1A5E52B3006FCDD5 /* common.h */,
+				B277B07D1A5E52B3006FCDD5 /* hash.h */,
+				B277B07E1A5E52B3006FCDD5 /* map-util.h */,
+				B277B0801A5E52B3006FCDD5 /* once.cc */,
+				B277B0811A5E52B3006FCDD5 /* once.h */,
+				B277B0821A5E52B3006FCDD5 /* platform_macros.h */,
+				B277B0831A5E52B3006FCDD5 /* stl_util.h */,
+				B277B0841A5E52B3006FCDD5 /* template_util.h */,
+				B277B0851A5E52B3006FCDD5 /* type_traits.h */,
+			);
+			path = stubs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B24258E71A5BE9C600581E0F /* protobuf-lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24258FC1A5BE9C600581E0F /* Build configuration list for PBXNativeTarget "protobuf-lite" */;
+			buildPhases = (
+				B24258E41A5BE9C600581E0F /* Sources */,
+				B24258E51A5BE9C600581E0F /* Frameworks */,
+				B24258E61A5BE9C600581E0F /* CopyFiles */,
+				B2DD30A41A5CCB8C003587A2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "protobuf-lite";
+			productName = "protobug-lite";
+			productReference = B24258E81A5BE9C600581E0F /* libprotobuf-lite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B24258E01A5BE9C600581E0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = wangping;
+				TargetAttributes = {
+					B24258E71A5BE9C600581E0F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B24258E31A5BE9C600581E0F /* Build configuration list for PBXProject "protobuf-lite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B24258DF1A5BE9C600581E0F;
+			productRefGroup = B24258E91A5BE9C600581E0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B24258E71A5BE9C600581E0F /* protobuf-lite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2DD30A41A5CCB8C003587A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"------protobuf-lite ARCH is: $ARCHS $CONFIGURATION---------\"\ntmpdir=$SRCROOT/output\nmkdir -p $tmpdir\ntmpname=${ARCHS// /-}\ncp $CONFIGURATION_BUILD_DIR/libprotobuf-lite.a ${tmpdir}/$tmpname-protobuf-lite.a\n[ -f $tmpdir/libprotobuf-lite.a ] && rm -f $tmpdir/libprotobuf-lite.a\nlipo -create $tmpdir/*.a -output $tmpdir/libprotobuf-lite.a\n#cp $CONFIGURATION_BUILD_DIR/libprotobuf-lite.a ${SRCROOT}/../protocol-stack/rcsdk/3rd/universal-pb/lib/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B24258E41A5BE9C600581E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F90D511A65020600D4837F /* config.h in Sources */,
+				B2F90D521A65020600D4837F /* extension_set.h in Sources */,
+				B2F90D531A65020600D4837F /* generated_message_util.h in Sources */,
+				B2F90D541A65020600D4837F /* coded_stream.h in Sources */,
+				B2F90D551A65020600D4837F /* coded_stream_inl.h in Sources */,
+				B2F90D561A65020600D4837F /* zero_copy_stream.h in Sources */,
+				B2F90D571A65020600D4837F /* zero_copy_stream_impl_lite.h in Sources */,
+				B2F90D581A65020600D4837F /* message_lite.h in Sources */,
+				B2F90D591A65020600D4837F /* repeated_field.h in Sources */,
+				B2F90D5A1A65020600D4837F /* atomicops.h in Sources */,
+				B2F90D5B1A65020600D4837F /* atomicops_internals_atomicword_compat.h in Sources */,
+				B2F90D5C1A65020600D4837F /* atomicops_internals_macosx.h in Sources */,
+				B2F90D5D1A65020600D4837F /* common.h in Sources */,
+				B2F90D5E1A65020600D4837F /* hash.h in Sources */,
+				B2F90D5F1A65020600D4837F /* map-util.h in Sources */,
+				B2F90D601A65020600D4837F /* once.h in Sources */,
+				B2F90D611A65020600D4837F /* platform_macros.h in Sources */,
+				B2F90D621A65020600D4837F /* stl_util.h in Sources */,
+				B2F90D631A65020600D4837F /* template_util.h in Sources */,
+				B2F90D641A65020600D4837F /* type_traits.h in Sources */,
+				B2F90D651A65020600D4837F /* wire_format_lite.h in Sources */,
+				B2F90D661A65020600D4837F /* wire_format_lite_inl.h in Sources */,
+				B277B0911A5E52B3006FCDD5 /* once.cc in Sources */,
+				B277B08C1A5E52B3006FCDD5 /* zero_copy_stream.cc in Sources */,
+				B277B08E1A5E52B3006FCDD5 /* message_lite.cc in Sources */,
+				B277B0891A5E52B3006FCDD5 /* extension_set.cc in Sources */,
+				B277B08F1A5E52B3006FCDD5 /* repeated_field.cc in Sources */,
+				B277B08D1A5E52B3006FCDD5 /* zero_copy_stream_impl_lite.cc in Sources */,
+				B277B08B1A5E52B3006FCDD5 /* coded_stream.cc in Sources */,
+				B277B0901A5E52B3006FCDD5 /* common.cc in Sources */,
+				B277B08A1A5E52B3006FCDD5 /* generated_message_util.cc in Sources */,
+				B277B0921A5E52B3006FCDD5 /* wire_format_lite.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B24258FA1A5BE9C600581E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		B24258FB1A5BE9C600581E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		B24258FD1A5BE9C600581E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					i386,
+					x86_64,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"./protobuf-lite",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 arm64 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		B24258FE1A5BE9C600581E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					i386,
+					x86_64,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"./protobuf-lite",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 arm64 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B24258E31A5BE9C600581E0F /* Build configuration list for PBXProject "protobuf-lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24258FA1A5BE9C600581E0F /* Debug */,
+				B24258FB1A5BE9C600581E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24258FC1A5BE9C600581E0F /* Build configuration list for PBXNativeTarget "protobuf-lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24258FD1A5BE9C600581E0F /* Debug */,
+				B24258FE1A5BE9C600581E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B24258E01A5BE9C600581E0F /* Project object */;
+}
