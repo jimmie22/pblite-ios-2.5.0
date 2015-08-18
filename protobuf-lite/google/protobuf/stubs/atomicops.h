@@ -77,11 +77,7 @@ typedef intptr_t Atomic64;
 
 // Use AtomicWord for a machine-sized pointer.  It will use the Atomic32 or
 // Atomic64 routines below, depending on your architecture.
-#ifndef ANDROID
 typedef intptr_t AtomicWord;
-#else
-typedef long long AtomicWord;
-#endif
 
 // Atomically execute:
 //      result = *ptr;

@@ -872,19 +872,19 @@ bool ExtensionSet::FindExtensionInfoFromTag(
   }
   return !is_unknown;
 }
-
-//bool ExtensionSet::ParseField(uint32 tag, io::CodedInputStream* input,
-//                              ExtensionFinder* extension_finder,
-//                              FieldSkipper* field_skipper) {
-//  int number;
-//  ExtensionInfo extension;
-//  if (!FindExtensionInfoFromTag(tag, extension_finder, &number, &extension)) {
-//    return field_skipper->SkipField(input, tag);
-//  } else {
-//    return ParseFieldWithExtensionInfo(number, extension, input, field_skipper);
-//  }
-//}
 /*
+bool ExtensionSet::ParseField(uint32 tag, io::CodedInputStream* input,
+                              ExtensionFinder* extension_finder,
+                              FieldSkipper* field_skipper) {
+  int number;
+  ExtensionInfo extension;
+  if (!FindExtensionInfoFromTag(tag, extension_finder, &number, &extension)) {
+    return field_skipper->SkipField(input, tag);
+  } else {
+    return ParseFieldWithExtensionInfo(number, extension, input, field_skipper);
+  }
+}
+
 bool ExtensionSet::ParseFieldWithExtensionInfo(
     int number, const ExtensionInfo& extension,
     io::CodedInputStream* input,
